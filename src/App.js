@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import AdoptPet from "./components/AdoptPet";
+import PetlyFooter from "./components/PetlyFooter";
+import PetlyNavbar from "./components/PetlyNavbar";
+import PetlyUpdate from "./components/PetlyUpdate";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <PetlyNavbar/>
+     <AdoptPet/>
+     <PetlyUpdate/>
+     <PetlyFooter/>
+    </>
   );
 }
 

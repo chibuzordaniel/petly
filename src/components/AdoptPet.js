@@ -4,16 +4,24 @@ import img1 from '../assests/Rectangle 257.png'
 import img2 from '../assests/Rectangle 503.png'
 import img3 from '../assests/Rectangle 504.png'
 import img4 from '../assests/Rectangle 505.png'
+import { UseDarkMode } from '../hooks/UseDarkMode'
 
 const AdoptPet = () => {
+
+  UseDarkMode()
+   
+
+
+
+
   return (
-    <div className=' bg-[#F0F6FF]'>
+    <div className=' bg-[#F0F6FF]  dark:bg-[#151D3B] '>
     <div className=' max-w-[1200px] mx-auto'>
         <div className='  flex justify-between'>
             <div className=' pt-64'>
-                <h3 className=' text-sm font-inter font-medium'>FIND SPECIAL PETS</h3>
-                <div className=' text-5xl leading-[58px] font-inter  font-semibold'>Think you Love Pets? <br/> <span className=' text-[#CB2E42]'>Adopt One.</span> </div>
-                <p className=' text-[16px] leading-5 font-inter font-normal'>Pet Adoption is quickly becomingthe preferred way to find a new dog, <br/> puppy, cat or kitten</p>
+                <h3 className=' text-sm font-inter text-[#344062] font-medium'>FIND SPECIAL PETS</h3>
+                <div className=' text-5xl leading-[58px] font-inter  text-[#344062]  font-semibold'>Think you Love Pets? <br/> <span className=' text-[#CB2E42]'>Adopt One.</span> </div>
+                <p className=' text-[16px] leading-5 font-inter font-normal text-[#344062]'>Pet Adoption is quickly becomingthe preferred way to find a new dog, <br/> puppy, cat or kitten</p>
             </div>
             <div className=' mt-48'>
                 <div className=' flex'>

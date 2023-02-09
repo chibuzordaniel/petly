@@ -6,6 +6,7 @@ import PetlyUpdate from "./components/PetlyUpdate";
 
 
 
+
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
      <AdoptPet/>
      <PetlyUpdate/>
      <PetlyFooter/>
+   
     </>
   );
 }

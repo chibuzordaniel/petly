@@ -14,7 +14,7 @@ const PetlyNavbar = () => {
   return (
     <>
       <div>
-        <div className=' bg-white  w-[100%] h-20  fixed  top-0  z-10  border dark:bg-[#151D3B] '>
+        <div className=' bg-white  w-[100%] h-20  fixed  top-0  z-10 border-[#CCC] border-b-[1px] dark:bg-[#151D3B] '>
             <div className='max-w-[1200px] mx-auto'>
                <div className=' flex justify-between'>
                 <Link  to='/'>

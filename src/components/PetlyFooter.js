@@ -8,7 +8,7 @@ const PetlyFooter = () => {
    
 
   return (
-    <div className=' bg-[#F3F5FB] h-[580px] w-[100%] border  dark:bg-[#151D3B] '>
+    <div className=' bg-[#F3F5FB] h-[580px] w-[100%] border-[#CCC] border-t-[1px]  dark:bg-[#151D3B] '>
       <div className=' max-w-[1200px] mx-auto'>
         <div className=' grid  grid-cols-2 gap-[850px]'>
             <div className=' '>
@@ -39,7 +39,7 @@ const PetlyFooter = () => {
 
         <div className=' text-center  -mt-12'>
            <h1 className=' text-5xl leading-[58px]  font-inter font-bold text-[#58667E]'> <span className=' text-[#0D75FF]'>Need</span> help with <br/> Adopting a pet?</h1>
-           <button className=' bg-[#0D75FF]  text-white rounded-full font-inter mr-48 mt-5  w-40 h-12'>View all pets</button>
+           <button className=' bg-[#0D75FF]  text-white rounded-full font-inter mr-40 mt-5  w-40 h-12'>View all pets</button>
         </div>
 
 

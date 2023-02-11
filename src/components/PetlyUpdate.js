@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img1 from '../assests/Rectangle 610.png'
 import img2 from '../assests/Group 340.png'
 import img3 from '../assests/Group 326.png'
@@ -7,8 +7,11 @@ import img5 from '../assests/Group 328.png'
 import img6 from '../assests/Group 329.png'
 import { UseDarkMode } from '../hooks/UseDarkMode'
 import { Link } from 'react-router-dom'
+import {DATA_CARDS} from '../data/DataUpdate'
 
 const PetlyUpdate = () => {
+
+    const [update, setUpdate] = useState(0)
 
     UseDarkMode()
 

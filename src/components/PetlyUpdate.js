@@ -23,7 +23,6 @@ const PetlyUpdate = () => {
                <h1 className=' font-inter font-medium text-[#344062] text-2xl'>Search Results</h1>
             </div>
             <div className=' grid grid-cols-3 mt-6'>
-             <Link to='/pet'>
                 <div className='  border w-[327px] h-[100%] pb-7 '>
                     <img  className=' mx-6 mt-5' src={img1} alt='' />
                     <div className=' flex  gap-48 '>
@@ -35,7 +34,7 @@ const PetlyUpdate = () => {
                     <p className=' pl-6 text-[#666879]  font-inter font-normal text-sm'>Havenese</p>
                     <div>
                         <div className=' flex '>
-                            <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button>
+                        <Link to='/pet'> <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button></Link>
                             <div className=' mt-7'>
                                 <svg className=' ml-11' width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.00236 5.17917C7.25351 5.17917 6.53534 5.46386 6.00582 5.97062C5.47631 6.47738 5.17883 7.16469 5.17883 7.88135C5.17883 8.59801 5.47631 9.28533 6.00582 9.79208C6.53534 10.2988 7.25351 10.5835 8.00236 10.5835C8.7512 10.5835 9.46938 10.2988 9.99889 9.79208C10.5284 9.28533 10.8259 8.59801 10.8259 7.88135C10.8259 7.16469 10.5284 6.47738 9.99889 5.97062C9.46938 5.46386 8.7512 5.17917 8.00236 5.17917ZM6.3553 7.88135C6.3553 7.4633 6.52883 7.06237 6.83771 6.76676C7.1466 6.47115 7.56553 6.30508 8.00236 6.30508C8.43918 6.30508 8.85812 6.47115 9.167 6.76676C9.47589 7.06237 9.64941 7.4633 9.64941 7.88135C9.64941 8.2994 9.47589 8.70034 9.167 8.99594C8.85812 9.29155 8.43918 9.45762 8.00236 9.45762C7.56553 9.45762 7.1466 9.29155 6.83771 8.99594C6.52883 8.70034 6.3553 8.2994 6.3553 7.88135Z" fill="#AFB6C1"/>
@@ -46,8 +45,7 @@ const PetlyUpdate = () => {
                         </div>
                     </div>
                  </div>
-                </Link>
-               <Link to='/pet'>
+               
                     <div className='  border w-[327px] h-[100%] pb-7 '>
                         <img  className=' mx-6 mt-5' src={img1} alt='' />
                         <div className=' flex  gap-48 '>
@@ -59,7 +57,7 @@ const PetlyUpdate = () => {
                         <p className=' pl-6 text-[#666879]  font-inter font-normal text-sm'>Havenese</p>
                         <div>
                             <div className=' flex '>
-                                <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button>
+                            <Link to='/pet'> <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button></Link>
                                 <div className=' mt-7'>
                                     <svg className=' ml-11' width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.00236 5.17917C7.25351 5.17917 6.53534 5.46386 6.00582 5.97062C5.47631 6.47738 5.17883 7.16469 5.17883 7.88135C5.17883 8.59801 5.47631 9.28533 6.00582 9.79208C6.53534 10.2988 7.25351 10.5835 8.00236 10.5835C8.7512 10.5835 9.46938 10.2988 9.99889 9.79208C10.5284 9.28533 10.8259 8.59801 10.8259 7.88135C10.8259 7.16469 10.5284 6.47738 9.99889 5.97062C9.46938 5.46386 8.7512 5.17917 8.00236 5.17917ZM6.3553 7.88135C6.3553 7.4633 6.52883 7.06237 6.83771 6.76676C7.1466 6.47115 7.56553 6.30508 8.00236 6.30508C8.43918 6.30508 8.85812 6.47115 9.167 6.76676C9.47589 7.06237 9.64941 7.4633 9.64941 7.88135C9.64941 8.2994 9.47589 8.70034 9.167 8.99594C8.85812 9.29155 8.43918 9.45762 8.00236 9.45762C7.56553 9.45762 7.1466 9.29155 6.83771 8.99594C6.52883 8.70034 6.3553 8.2994 6.3553 7.88135Z" fill="#AFB6C1"/>
@@ -70,8 +68,8 @@ const PetlyUpdate = () => {
                             </div>
                         </div>
                     </div>
-                </Link>
-                <Link to='/pet'>
+               
+                
                     <div className='  border w-[327px] h-[100%] pb-7 '>
                         <img  className=' mx-6 mt-5' src={img1} alt='' />
                         <div className=' flex  gap-48 '>
@@ -83,7 +81,7 @@ const PetlyUpdate = () => {
                         <p className=' pl-6 text-[#666879]  font-inter font-normal text-sm'>Havenese</p>
                         <div>
                             <div className=' flex '>
-                                <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button>
+                            <Link to='/pet'> <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button></Link>
                                 <div className=' mt-7'>
                                     <svg className=' ml-11' width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.00236 5.17917C7.25351 5.17917 6.53534 5.46386 6.00582 5.97062C5.47631 6.47738 5.17883 7.16469 5.17883 7.88135C5.17883 8.59801 5.47631 9.28533 6.00582 9.79208C6.53534 10.2988 7.25351 10.5835 8.00236 10.5835C8.7512 10.5835 9.46938 10.2988 9.99889 9.79208C10.5284 9.28533 10.8259 8.59801 10.8259 7.88135C10.8259 7.16469 10.5284 6.47738 9.99889 5.97062C9.46938 5.46386 8.7512 5.17917 8.00236 5.17917ZM6.3553 7.88135C6.3553 7.4633 6.52883 7.06237 6.83771 6.76676C7.1466 6.47115 7.56553 6.30508 8.00236 6.30508C8.43918 6.30508 8.85812 6.47115 9.167 6.76676C9.47589 7.06237 9.64941 7.4633 9.64941 7.88135C9.64941 8.2994 9.47589 8.70034 9.167 8.99594C8.85812 9.29155 8.43918 9.45762 8.00236 9.45762C7.56553 9.45762 7.1466 9.29155 6.83771 8.99594C6.52883 8.70034 6.3553 8.2994 6.3553 7.88135Z" fill="#AFB6C1"/>
@@ -94,7 +92,6 @@ const PetlyUpdate = () => {
                             </div>
                         </div>
                     </div>
-                </Link>
             </div>
 
             
@@ -143,7 +140,6 @@ const PetlyUpdate = () => {
 
 
             <div className=' mt-12 grid grid-cols-3'>
-            <Link to='/pet'>
                 <div className='  border w-[327px] h-[100%] pb-7 '>
                         <img  className=' mx-6 mt-5' src={img1} alt='' />
                         <div className=' flex  gap-48 '>
@@ -155,7 +151,7 @@ const PetlyUpdate = () => {
                         <p className=' pl-6 text-[#666879]  font-inter font-normal text-sm'>Havenese</p>
                         <div>
                             <div className=' flex '>
-                                <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button>
+                            <Link to='/pet'> <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button></Link>
                                 <div className=' mt-7'>
                                     <svg className=' ml-11' width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.00236 5.17917C7.25351 5.17917 6.53534 5.46386 6.00582 5.97062C5.47631 6.47738 5.17883 7.16469 5.17883 7.88135C5.17883 8.59801 5.47631 9.28533 6.00582 9.79208C6.53534 10.2988 7.25351 10.5835 8.00236 10.5835C8.7512 10.5835 9.46938 10.2988 9.99889 9.79208C10.5284 9.28533 10.8259 8.59801 10.8259 7.88135C10.8259 7.16469 10.5284 6.47738 9.99889 5.97062C9.46938 5.46386 8.7512 5.17917 8.00236 5.17917ZM6.3553 7.88135C6.3553 7.4633 6.52883 7.06237 6.83771 6.76676C7.1466 6.47115 7.56553 6.30508 8.00236 6.30508C8.43918 6.30508 8.85812 6.47115 9.167 6.76676C9.47589 7.06237 9.64941 7.4633 9.64941 7.88135C9.64941 8.2994 9.47589 8.70034 9.167 8.99594C8.85812 9.29155 8.43918 9.45762 8.00236 9.45762C7.56553 9.45762 7.1466 9.29155 6.83771 8.99594C6.52883 8.70034 6.3553 8.2994 6.3553 7.88135Z" fill="#AFB6C1"/>
@@ -166,8 +162,7 @@ const PetlyUpdate = () => {
                             </div>
                         </div>
                    </div>
-                   </Link>
-                   <Link to='/pet'>
+                
                     <div className='  border w-[327px] h-[100%] pb-7 '>
                         <img  className=' mx-6 mt-5' src={img1} alt='' />
                         <div className=' flex  gap-48 '>
@@ -179,7 +174,7 @@ const PetlyUpdate = () => {
                         <p className=' pl-6 text-[#666879]  font-inter font-normal text-sm'>Havenese</p>
                         <div>
                             <div className=' flex '>
-                                <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button>
+                            <Link to='/pet'> <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button></Link>
                                 <div className=' mt-7'>
                                     <svg className=' ml-11' width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.00236 5.17917C7.25351 5.17917 6.53534 5.46386 6.00582 5.97062C5.47631 6.47738 5.17883 7.16469 5.17883 7.88135C5.17883 8.59801 5.47631 9.28533 6.00582 9.79208C6.53534 10.2988 7.25351 10.5835 8.00236 10.5835C8.7512 10.5835 9.46938 10.2988 9.99889 9.79208C10.5284 9.28533 10.8259 8.59801 10.8259 7.88135C10.8259 7.16469 10.5284 6.47738 9.99889 5.97062C9.46938 5.46386 8.7512 5.17917 8.00236 5.17917ZM6.3553 7.88135C6.3553 7.4633 6.52883 7.06237 6.83771 6.76676C7.1466 6.47115 7.56553 6.30508 8.00236 6.30508C8.43918 6.30508 8.85812 6.47115 9.167 6.76676C9.47589 7.06237 9.64941 7.4633 9.64941 7.88135C9.64941 8.2994 9.47589 8.70034 9.167 8.99594C8.85812 9.29155 8.43918 9.45762 8.00236 9.45762C7.56553 9.45762 7.1466 9.29155 6.83771 8.99594C6.52883 8.70034 6.3553 8.2994 6.3553 7.88135Z" fill="#AFB6C1"/>
@@ -190,8 +185,8 @@ const PetlyUpdate = () => {
                             </div>
                         </div>
                     </div>
-                </Link>
-                <Link to='/pet'>
+                
+                
                     <div className='  border w-[327px] h-[100%] pb-7 '>
                         <img  className=' mx-6 mt-5' src={img1} alt='' />
                         <div className=' flex  gap-48 '>
@@ -203,7 +198,7 @@ const PetlyUpdate = () => {
                         <p className=' pl-6 text-[#666879]  font-inter font-normal text-sm'>Havenese</p>
                         <div>
                             <div className=' flex '>
-                                <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button>
+                            <Link to='/pet'> <button className=' bg-[#0D75FF] mt-4  w-[121px] h-10 rounded-full text-white text-sm ml-6'>View Details</button></Link>
                                 <div className=' mt-7'>
                                     <svg className=' ml-11' width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.00236 5.17917C7.25351 5.17917 6.53534 5.46386 6.00582 5.97062C5.47631 6.47738 5.17883 7.16469 5.17883 7.88135C5.17883 8.59801 5.47631 9.28533 6.00582 9.79208C6.53534 10.2988 7.25351 10.5835 8.00236 10.5835C8.7512 10.5835 9.46938 10.2988 9.99889 9.79208C10.5284 9.28533 10.8259 8.59801 10.8259 7.88135C10.8259 7.16469 10.5284 6.47738 9.99889 5.97062C9.46938 5.46386 8.7512 5.17917 8.00236 5.17917ZM6.3553 7.88135C6.3553 7.4633 6.52883 7.06237 6.83771 6.76676C7.1466 6.47115 7.56553 6.30508 8.00236 6.30508C8.43918 6.30508 8.85812 6.47115 9.167 6.76676C9.47589 7.06237 9.64941 7.4633 9.64941 7.88135C9.64941 8.2994 9.47589 8.70034 9.167 8.99594C8.85812 9.29155 8.43918 9.45762 8.00236 9.45762C7.56553 9.45762 7.1466 9.29155 6.83771 8.99594C6.52883 8.70034 6.3553 8.2994 6.3553 7.88135Z" fill="#AFB6C1"/>
@@ -214,7 +209,6 @@ const PetlyUpdate = () => {
                             </div>
                         </div>
                     </div>
-                </Link>
             </div>
         </div>
         </div>

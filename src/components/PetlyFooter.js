@@ -10,8 +10,8 @@ const PetlyFooter = () => {
   return (
     <div className=' bg-[#F3F5FB] h-[580px] w-[100%] border-[#CCC] border-t-[1px]  dark:bg-[#151D3B] '>
       <div className=' max-w-[1200px] mx-auto'>
-        <div className=' grid  grid-cols-2 gap-[850px]'>
-            <div className=' '>
+        <div className=' lg:grid  grid-cols-2 gap-[850px]  md:hidden   '>
+            <div className='  '>
                 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M100 64.6446C100 84.1708 84.1709 99.9999 64.6446 99.9999C45.1184 99.9999 29.2893 84.1708 29.2893 64.6446C29.2893 45.1184 45.1184 29.2892 64.6446 29.2892C84.1709 29.2892 100 45.1184 100 64.6446Z" fill="#BFF3ED"/>
                 <path d="M100 64.6446C100 84.1708 84.1709 99.9999 64.6446 99.9999C45.1184 99.9999 29.2893 84.1708 29.2893 64.6446C29.2893 45.1184 45.1184 29.2892 64.6446 29.2892C84.1709 29.2892 100 45.1184 100 64.6446Z" stroke="black"/>
@@ -43,7 +43,7 @@ const PetlyFooter = () => {
         </div>
 
 
-      <div className=' grid grid-cols-2  '>
+      <div className=' lg:grid grid-cols-2  md:hidden    '>
         <div className='  -mt-36 ml-40 '>
           <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M67.2836 63.3554C67.2836 82.8816 81.3539 98.7107 98.7104 98.7107V28C81.3539 28.0001 67.2836 43.8292 67.2836 63.3554Z" fill="#CAFBF5"/>

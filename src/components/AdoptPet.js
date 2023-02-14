@@ -15,21 +15,21 @@ const AdoptPet = () => {
 
 
   return (
-    <div className=' bg-[#F0F6FF]  dark:bg-[#151D3B] '>
+    <div className=' bg-[#F0F6FF] lg:w-[100%]  md:w-[945px]   dark:bg-[#151D3B] '>
     <div className=' max-w-[1200px] mx-auto'>
-        <div className='  flex justify-between'>
-            <div className=' pt-64'>
+        <div className='  lg:flex justify-between md:block'>
+            <div className=' pt-64 lg:ml-0 md:ml-12'>
                 <h3 className=' text-sm font-inter text-[#344062] font-medium'>FIND SPECIAL PETS</h3>
                 <div className=' text-5xl leading-[58px] font-inter  text-[#344062]  font-semibold'>Think you Love Pets? <br/> <span className=' text-[#CB2E42]'>Adopt One.</span> </div>
                 <p className=' text-[16px] leading-5 font-inter font-normal text-[#344062]'>Pet Adoption is quickly becomingthe preferred way to find a new dog, <br/> puppy, cat or kitten</p>
             </div>
-            <div className=' mt-48'>
-                <div className=' flex'>
+            <div className='  mt-48'>
+                <div className=' lg:flex md:hidden'>
                   <img src={img1} alt=''/>
                   <img src={img2} alt=''/>
                 </div>
                 
-                <div className=' flex'>
+                <div className=' lg:flex md:hidden'>
                   <img src={img3} alt=''/> 
                   <img src={img4} alt=''/>
                 </div>
@@ -37,8 +37,8 @@ const AdoptPet = () => {
         </div>
         <div>
           <div className=' bg-white w-[945px] h-60  relative bottom-20'>
-            <div className='bg-[#F8FAFD]  rounded-full w-[850px] h-[66px]  relative left-8 top-4  '>
-              <div className='  flex  text-[#8588A3]  justify-between   '>
+            <div className='lg:bg-[#F8FAFD]  rounded-full w-[850px] h-[66px]  relative left-8 top-4 md:bg-none  '>
+              <div className='  lg:flex  text-[#8588A3]  justify-between  md:block   '>
 
                 <div className=' flex gap-2'>
                     <svg className=' my-[25px] ml-7' width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import PetlyNuna from "./page/PetlyNuna";
+import AdoptLuna from "./page/AdoptLuna";
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -16,10 +17,14 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/pet",
+    path: "/pet/details/:productId",
     element: <PetlyNuna/>,
   },
 
+  {
+    path: "/nuna",
+    element: <AdoptLuna/>,
+  },
  
 ]);
 

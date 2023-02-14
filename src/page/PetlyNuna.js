@@ -1,14 +1,41 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PetlyNavbar from '../components/PetlyNavbar'
 import img2 from '../assests/Group 340.png'
 import img3 from '../assests/Rectangle 591.png'
 import img4 from '../assests/Rectangle 599.png'
 import img5 from '../assests/Rectangle 600.png'
 import img6 from '../assests/Rectangle 601.png'
+// import img7 from '../assests/Rectangle 594.png'
 import PetlyFooter from '../components/PetlyFooter'
+import AdoptLuna from './AdoptLuna'
+import { useParams } from 'react-router-dom'
+
+
 
 const PetlyNuna = () => {
+
+  const {productId} = useParams()
+  const [update, setUpdate] = useState([])
+  
+  const [toggle, setToggle] = useState()
+
+  const handleToggle = () => setToggle(true)
+  const handleToggleclose = () => setToggle(false)
+
+  useEffect(() => {
+    // setIsloading(true)
+    setTimeout( async () => {
+        const res = await fetch(`https://dummyjson.com/products/${productId}`);
+        const data = await res.json();
+        setUpdate(data)
+        // setIsloading(false)
+    }, 5000)
+  },[productId])
+
+  console.log(update)
+
+
   return (
     <div>
       <PetlyNavbar/>
@@ -23,7 +50,7 @@ const PetlyNuna = () => {
           </div>
 
           <div className=' ml-[560px] mt-7'>
-            <img src={img2} alt='' />
+            <img  className=' ' src={img2} alt='' />
           </div>
       </div>
     
@@ -32,7 +59,8 @@ const PetlyNuna = () => {
           <div>
             <h3 className=' pt-5 text-2xl font-inter font-medium text-[#58667E]'>Luna Pictures</h3>
             <div className=' flex justify-center mt-6 mx-auto bg-white w-[696px] h-[277px]'>
-              <img  className='w-[673px]  pt-3 h-[267px]' src={img6} alt=''/>
+
+              <img className='w-[673px] object-cover  pt-3 h-[267px]' src={update.images[0]} alt='/'/>
             </div>
           </div>
           <div className=' flex gap-5 mt-4'>
@@ -54,7 +82,7 @@ const PetlyNuna = () => {
        </div>
 
        <div className='  w-[696px] h-[211px] bg-white mt-6'>
-          <h1 className=' text-2xl text-[#58667E] font-inter font-medium pt-8 pl-7 '>Description</h1>
+          <h1 className=' text-2xl text-[#58667E] font-inter font-medium pt-8 pl-7 '>{update.brand}</h1>
           <p className=' text-sm text-[#58667E] font-inter font-normal pl-7 '>
             Clina-Lancet Laboratories is a member of the 
             Lancet Group of Laboratories in 14 African countries.
@@ -70,12 +98,13 @@ const PetlyNuna = () => {
        </div>
 
         <div>
-          <button className='bg-[#0D75FF] mt-9 rounded-full text-white text-sm font-inter font-normal w-[155px] h-12'>Adopt Luna</button>
+          <button className='bg-[#0D75FF] mt-9 rounded-full text-white text-sm font-inter font-normal w-[155px] h-12' onClick={handleToggle}>Adopt Luna</button>
         </div>
 
      </div>
    </div>
    <PetlyFooter/>
+   <AdoptLuna visible={toggle} onclose={handleToggleclose} />
    </div>
   )
 }

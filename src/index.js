@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/pet/details/:productId",
+    path: "/petly/:petId",
     element: <PetlyNuna/>,
   },
 

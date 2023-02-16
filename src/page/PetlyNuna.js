@@ -16,36 +16,38 @@ import { useParams } from 'react-router-dom'
 const PetlyNuna = () => {
 
   const {petId} = useParams()
-  const [update, setUpdate] = useState('')
+  const [update, setUpdate] = useState({})
   const [toggle, setToggle] = useState()
   const handleToggle = () => setToggle(true)
   const handleToggleclose = () => setToggle(false)
   
 
-  
   useEffect(() => {
     // setIsloading(true)
-    fetch(`https://dummyjson.com/products/${petId}`)
+    fetch(`https://pets-v2.dev-apis.com/pets`)
     .then(res => res.json())
     .then(data => {
-        setUpdate(data)
-        setTimeout(() => {
-            // setIsloading(false)
-        }, 3000);
-    })
- }, [petId])
+      setUpdate(data)
+      
+        // setTimeout(() => {
+        //     // setIsloading(false)
+        // }, 3000);
+ 
+    }) 
+}, [petId])
 
-  console.log(update)
+console.log(update);
+  
   return (
     <div>
       <PetlyNavbar/>
       <div className=' flex mt-40  justify-center mx-auto '>
           <div>
-            <h3 className=' bg-[#F0F6FF] w-20 h-20  text-center py-5 text-4xl font-inter font-semibold rounded-full'>L</h3>
+            <h3 className=' bg-[#F0F6FF] w-20 h-20  text-center py-5 text-4xl font-inter font-semibold rounded-full'>h</h3>
           </div>
 
           <div className=' pl-5 pt-2'>
-            <h3 className=' text-4xl  font-inter text-[#344062] font-semibold'>Luna</h3>
+            <h3 className=' text-4xl  font-inter text-[#344062] font-semibold'>hgghg</h3>
             <p className=' text-[#344062]  text-sm font-inter font-medium'>Havenese Dog</p>
           </div>
 
@@ -60,7 +62,7 @@ const PetlyNuna = () => {
             <h3 className=' pt-5 text-2xl font-inter font-medium text-[#58667E]'>Luna Pictures</h3>
             <div className=' flex justify-center mt-6 mx-auto bg-white w-[696px] h-[277px]'>
 
-              {/* <img className='w-[673px] object-cover  pt-3 h-[267px]' src={update.images} alt='' /> */}
+              <img className='w-[673px] object-cover  pt-3 h-[267px]' src={''} alt='img' />
             </div>
           </div>
           <div className=' flex gap-5 mt-4'>
@@ -82,12 +84,13 @@ const PetlyNuna = () => {
        </div>
 
        <div className='  w-[696px] h-[211px] bg-white mt-6'>
-          <h1 className=' text-2xl text-[#58667E] font-inter font-medium pt-8 pl-7 '>Luna</h1>
-          <p className=' text-sm text-[#58667E] font-inter font-normal pl-7 '>
+          <h1 className=' text-2xl text-[#58667E] font-inter font-medium pt-8 pl-7 '>titit</h1>
+          <p className=' text-sm text-[#58667E] font-inter w-[500px] font-normal pl-7 '>
             Clina-Lancet Laboratories is a member of the 
             Lancet Group of Laboratories in 14 African countries.
             We are ISO 15189:2012 accredited, operating as a 24-hour
-            laboratory in 8 locations in Nigeria  <br/>across Lagos,
+            laboratory in 8 locations in Nigeria  <br/>across Lagos, 
+            
           </p>
           <div className=' flex bg-[#F0F6FF] ml-7 mt-3 w-[147px] h-12 justify-center'>
             <svg className=' my-3' width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">

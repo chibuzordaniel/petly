@@ -34,7 +34,7 @@ const PetlyUpdate = () => {
             setUpdate(data.pets)
             setTimeout(() => {
                 setIsloading(false)
-            }, 3000);
+            }, 5000);
         })
         .catch((err) => err.message)
     }, [])

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import img1 from '../assests/Rectangle 610.png'
+// import img1 from '../assests/Rectangle 610.png'
 import img2 from '../assests/Group 340.png'
 import img3 from '../assests/Group 326.png'
 import img4 from '../assests/Group 327.png'
@@ -36,6 +36,7 @@ const PetlyUpdate = () => {
                 setIsloading(false)
             }, 3000);
         })
+        .catch((err) => err.message)
     }, [])
 
     console.log(update);

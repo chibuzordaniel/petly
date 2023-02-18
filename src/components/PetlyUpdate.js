@@ -52,10 +52,10 @@ const PetlyUpdate = () => {
             {isloading ? (
                  <SkeletonElement/>
             ) : (
-           <div className=' grid grid-cols-3 mt-6'>
+           <div className=' lg:grid lg:grid-cols-3 mt-6 md:block lg:ml-0 md:ml-40 '>
               {update.length > 0 && update.map((product, index) => (
                     <div key={product.id}>
-                    <div className='border w-[327px]  h-[90%] mb-20 '>
+                    <div className='border lg:w-[327px]  lg:h-[90%] mb-20 '>
                         <div  className=' '>
                             <img className=' object-cover border-b-[1px] p-5 h-[250px] w-[100%] pl-7 pr-7 pt-5' src={product.images[0]} alt='/'/>
                             <div className=' flex '>
@@ -137,10 +137,10 @@ const PetlyUpdate = () => {
             {isloading ? (
                  <SkeletonElement/>
             ) : (
-            <div className=' grid grid-cols-3 mt-6'>
+            <div className=' lg:grid lg:grid-cols-3 mt-6 md:block  lg:ml-0 md:ml-40'>
                 {update.length > 0 && update.map((product, index) => (
                     <div key={product.id}>
-                      <div className='border w-[327px]  h-[90%] mb-20 '>
+                      <div className='border lg:w-[327px]  lg:h-[90%] mb-20 '>
                         <div  className=' '>
                             <img className=' object-cover border-b-[1px] p-5 h-[250px] w-[100%] pl-7 pr-7 pt-5' src={product.images[0]} alt='/'/>
                             <div className=' flex '>

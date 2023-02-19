@@ -52,7 +52,7 @@ const PetlyUpdate = () => {
             {isloading ? (
                  <SkeletonElement/>
             ) : (
-           <div className=' lg:grid lg:grid-cols-3 mt-6 md:block lg:ml-0 md:ml-40 '>
+           <div className=' lg:grid lg:grid-cols-3 mt-6 md:block lg:ml-0 md:ml-40  '>
               {update.length > 0 && update.map((product, index) => (
                     <div key={product.id}>
                     <div className='border lg:w-[327px]  lg:h-[90%] mb-20 '>
@@ -96,28 +96,28 @@ const PetlyUpdate = () => {
         <div>
             <div className=' pt-14'>
                 <h1 className=' lg:ml-0 font-inter font-medium text-4xl text-[#666879] md:ml-10'>Browse Though Pet Types</h1>
-                <div className=' lg:ml-0 flex gap-4 mt-10 md:ml-10 '>
-                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] hover:text-[#0D75FF] w-[118px] h-[108px] rounded-3xl'>
+                <div className=' lg:ml-0 flex gap-4 mt-10 md:ml-10  group'>
+                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472]  group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 duration-500 hover:text-[#0D75FF] w-[118px] h-[108px] rounded-3xl'>
                         <img className=' mx-11 mt-7 ' src={img2} alt='' />
                         <h3 className='    text-center'>Dogs</h3>
                     </div>
 
-                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
+                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 duration-500 hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
                         <img className=' mx-11 mt-7 ' src={img3} alt='' />
                         <h3 className=' text-center'>Cat</h3>
                     </div>
 
-                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
+                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472]  group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 duration-500 hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
                         <img className=' mx-11 mt-7 ' src={img4} alt='' />
                         <h3 className=' text-center'>Bird</h3>
                     </div>
 
-                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
+                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 duration-500 hover:text-[#0D75FF]   w-[118px] h-[108px] rounded-3xl'>
                         <img className=' mx-11 mt-6 ' src={img5} alt='' />
                         <h3 className=' text-center'>Rabbit</h3>
                     </div>
 
-                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
+                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85]  hover:!scale-100 duration-500 hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
                         <img className=' mx-11 mt-10 ' src={img6} alt='' />
                         <h3 className=' text-center'>Reptile</h3>
                     </div>

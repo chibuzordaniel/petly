@@ -32,7 +32,7 @@ const PetlyNuna = () => {
       
         setTimeout(() => {
             setIsloading(false)
-        }, 5000);
+        }, 3000);
      
     })
     .catch((err) => err.message)

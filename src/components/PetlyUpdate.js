@@ -117,7 +117,7 @@ const PetlyUpdate = () => {
                         <h3 className=' text-center'>Rabbit</h3>
                     </div>
 
-                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85]  hover:!scale-100 duration-500 hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
+                    <div className=' border bg-[#F0F6FF] cursor-pointer text-[#5F6472] group-hover:blur-sm hover:!blur-none group-hover:scale-[0.95]  hover:!scale-100 duration-500 hover:text-[#0D75FF]  w-[118px] h-[108px] rounded-3xl'>
                         <img className=' mx-11 mt-10 ' src={img6} alt='' />
                         <h3 className=' text-center'>Reptile</h3>
                     </div>

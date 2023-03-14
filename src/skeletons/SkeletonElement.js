@@ -3,7 +3,7 @@ import React from 'react'
 const SkeletonElement = () => {
      
   const arry = []
-  for(let i = 1; i<= 20;i++) arry.push(i);
+  for(let i = 1; i<= 10;i++) arry.push(i);
    
   return (
     <div className='  max-w-[1200px] mx-auto mb-20'>
@@ -27,7 +27,7 @@ const SkeletonElement = () => {
             </div>
             </div>
          </div>
-           ))}
+        ))}
         </div>
     </div>
   )

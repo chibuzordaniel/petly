@@ -21,9 +21,9 @@ const SkeletonElement = () => {
                     <div className=' bg-[#F0F6FF] animate-pulse mt-4 w-[30px] h-[30px] rounded-full'></div>
             </div>
             <div className=' flex justify-between mt-4'>
-                    <div className=' bg-[#F0F6FF] animate-pulse w-[121px] h-[39px]'></div>
-                    <div className=' bg-[#F0F6FF] animate-pulse mt-2  w-[25px] h-[25px] rounded-full'></div>
-                    <div className='bg-[#F0F6FF] animate-pulse mt-3 rounded-full w-[68px] h-[16px]'></div>
+                <div className=' bg-[#F0F6FF] animate-pulse w-[121px] h-[39px]'></div>
+                <div className=' bg-[#F0F6FF] animate-pulse mt-2  w-[25px] h-[25px] rounded-full'></div>
+                <div className='bg-[#F0F6FF] animate-pulse mt-3 rounded-full w-[68px] h-[16px]'></div>
             </div>
             </div>
          </div>

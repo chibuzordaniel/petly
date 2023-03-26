@@ -12,17 +12,14 @@ import AdoptLuna from './AdoptLuna'
 import { useParams } from 'react-router-dom'
 import SkeletonPets from '../skeletons/SkeletonPets'
 
-
-
 const PetlyNuna = () => {
-
   const {id} = useParams()
   const [update, setUpdate] = useState({})
   const [toggle, setToggle] = useState()
   const handleToggle = () => setToggle(true)
   const handleToggleclose = () => setToggle(false)
   const [isloading, setIsloading] = useState( true)
-
+  
   useEffect(() => {
     setIsloading(true)
     fetch(`https://pets-v2.dev-apis.com/pets?id=${id}`)
@@ -112,16 +109,11 @@ const PetlyNuna = () => {
             </div>
           ))}
         </div>
-           
-
         )}
-    
-     
-   
-   </div>
-   <PetlyFooter/> 
-    <AdoptLuna visible={toggle} onclose={handleToggleclose} />
-   </div>
+     </div>
+      <PetlyFooter/> 
+      <AdoptLuna visible={toggle} onclose={handleToggleclose} />
+    </div>
   )
 }
 

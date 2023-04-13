@@ -55,9 +55,9 @@ const PetlyUpdate = () => {
            <div className=' lg:grid lg:grid-cols-3 mt-6 sm:block lg:ml-0 sm:ml-10  '>
               {update.length > 0 && update.map((product, index) => (
                     <div key={product.id}>
-                    <div className='border lg:w-[327px]  lg:h-[90%] mb-20  sm:w-[850px] sm:h-[750px]'>
+                    <div className='border lg:w-[327px]  lg:h-[90%] mb-20  sm:w-[850px] sm:h-[890px]'>
                         <div  className=' '>
-                            <img className=' object-cover border-b-[1px] p-5 h-[250px] w-[100%] pl-7 pr-7 pt-5 sm:h-[500px]' src={product.images[0]} alt='/'/>
+                            <img className=' object-cover border-b-[1px] p-5 lg:h-[250px] w-[100%] pl-7 pr-7 pt-5 sm:h-[620px]' src={product.images[0]} alt='/'/>
                             <div className=' flex '>
                                 <div>
                                     <h1 className='  font-inter font-medium text-2xl   text-[#666879] pt-7 pl-7 w-[300px]'>{product.name}</h1>
@@ -140,9 +140,9 @@ const PetlyUpdate = () => {
             <div className=' lg:grid lg:grid-cols-3 mt-6 sm:block lg:ml-0 sm:ml-10 '>
                 {update.length > 0 && update.map((product, index) => (
                     <div key={product.id}>
-                      <div className='border lg:w-[327px]  lg:h-[90%] mb-20  sm:w-[850px] sm:h-[750px]'>
+                      <div className='border lg:w-[327px]  lg:h-[90%] mb-20  sm:w-[850px] sm:h-[890px]'>
                         <div  className=' '>
-                            <img className=' object-cover border-b-[1px] p-5 h-[250px] w-[100%] pl-7 pr-7 pt-5 sm:h-[500px]' src={product.images[0]} alt='/'/>
+                            <img className=' object-cover border-b-[1px] p-5 lg:h-[250px] w-[100%] pl-7 pr-7 pt-5 sm:h-[620px]' src={product.images[0]} alt='/'/>
                             <div className=' flex '>
                                 <div>
                                     <h1 className='  font-inter font-medium text-2xl   text-[#666879] pt-7 pl-7 w-[300px]'>{product.name}</h1>

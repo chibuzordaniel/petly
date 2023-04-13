@@ -11,7 +11,7 @@ const AdoptPet = () => {
   UseDarkMode()
    
   return (
-    <div className=' bg-[#F0F6FF]  lg:w-[100%] lg:pb-0 lg:h-[882px]  md:w-[945px] md:pb-72 sm:w-[960px]  sm:h-[1270px]  dark:bg-[#151D3B] '>
+    <div className=' bg-[#F0F6FF]  lg:w-[100%] lg:pb-0 lg:h-[882px]  md:w-[945px] md:pb-72 sm:w-[990px]  sm:h-[1270px]  dark:bg-[#151D3B] '>
       <div className=' max-w-[1200px] mx-auto'>
         <div className='  lg:flex justify-between md:block'>
             <div className=' pt-64 lg:ml-0 md:ml-12 lg:pl-0 sm:pl-8'>
